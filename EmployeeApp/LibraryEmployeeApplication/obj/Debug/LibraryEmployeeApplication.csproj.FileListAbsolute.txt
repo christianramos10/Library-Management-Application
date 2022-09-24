@@ -1,0 +1,14 @@
+D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\bin\Debug\LibraryEmployeeApplication.exe.config
+D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\bin\Debug\LibraryEmployeeApplication.exe
+D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\bin\Debug\LibraryEmployeeApplication.pdb
+D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Debug\LibraryEmployeeApplication.csproj.AssemblyReference.cache
+D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Debug\LibraryEmployeeApplication.csproj.SuggestedBindingRedirects.cache
+D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Debug\LibraryEmployeeApplication.mainForm.resources
+D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Debug\LibraryEmployeeApplication.Properties.Resources.resources
+D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Debug\LibraryEmployeeApplication.csproj.GenerateResource.cache
+D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Debug\LibraryEmployeeApplication.csproj.CoreCompileInputs.cache
+D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Debug\LibraryEmployeeApplication.exe
+D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Debug\LibraryEmployeeApplication.pdb
+D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Debug\LibraryEmployeeApplication.menu.resources
+D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Debug\LibraryEmployeeApplication.signUp.resources
+D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Debug\LibraryEmployeeApplication.validateAdmin.resources
