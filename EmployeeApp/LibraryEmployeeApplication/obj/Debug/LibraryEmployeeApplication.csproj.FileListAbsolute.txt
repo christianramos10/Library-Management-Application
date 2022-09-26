@@ -12,3 +12,4 @@ D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Deb
 D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Debug\LibraryEmployeeApplication.menu.resources
 D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Debug\LibraryEmployeeApplication.signUp.resources
 D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Debug\LibraryEmployeeApplication.validateAdmin.resources
+D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Debug\LibraryEmployeeApplication.booksList.resources

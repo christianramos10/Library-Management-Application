@@ -20,6 +20,38 @@ namespace LibraryEmployeeApplication
             this.employeeNum = employeeNum; 
         }
 
+        private void booksdbBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            booksList booksList = new booksList();
+            booksList.ShowDialog();
+            this.Close();
+        }
+
+        private void clientRegistryBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            clientList clientList = new clientList();
+            clientList.ShowDialog();
+            this.Close();
+        }
+
+        private void rentedBooksBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            rentedBooksList rentedBooksList = new rentedBooksList();
+            rentedBooksList.ShowDialog();
+            this.Close();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            mainForm mainForm = new mainForm(); 
+            mainForm.ShowDialog();
+            this.Close();
+        }
+
         private void menu_Load(object sender, EventArgs e)
         {
 

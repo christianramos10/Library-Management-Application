@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="booksList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booksList.Designer.cs">
+      <DependentUpon>booksList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clientList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientList.Designer.cs">
+      <DependentUpon>clientList.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +72,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rentedBooksList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rentedBooksList.Designer.cs">
+      <DependentUpon>rentedBooksList.cs</DependentUpon>
+    </Compile>
     <Compile Include="signUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +90,9 @@
     <Compile Include="validateAdmin.Designer.cs">
       <DependentUpon>validateAdmin.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="booksList.resx">
+      <DependentUpon>booksList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
     </EmbeddedResource>

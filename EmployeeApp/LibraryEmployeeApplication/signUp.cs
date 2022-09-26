@@ -180,7 +180,7 @@ namespace LibraryEmployeeApplication
                 this.dataGridView.DataSource = dt;
             }
             else {
-                MessageBox.Show("Employee Not Found!");
+                MessageBox.Show("Employee Number Not Found!");
             }
         }
 

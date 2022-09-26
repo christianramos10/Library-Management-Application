@@ -1,0 +1,25 @@
+use Librarydb
+go
+
+create table book_Table(
+	title varchar(255),
+	edition varchar(255), 
+	author varchar(255),
+	editor varchar(255),
+	publisher varchar(255),
+	publicationYear int,
+	isbn10 int primary key,
+	lang varchar(50),
+	genre varchar(100),
+	pages int,
+	rented int, 
+	onHand int,
+	total int, 
+	storage varchar(25)
+);
+
+insert into book_Table values('The Wicked King', '2nd', 'Holly Black', '','Little Brown Books for Young Readers', 2019, 0316310336, 'English', 'Romance Fantasy', 336, 5, 15, 20);
+insert into book_Table values('The Queen of Nothing', '3rd', 'Holly Black', '', 'Hachette UK', 2019, 0316310409, 'English', 'Fiction Contemporary Fiction', 320, 3, 7, 10);
+insert into book_Table values('365 Days with Self-Discipline', '', 'Martin Meadows','', 'Createspace Independent Publishing Platform', 2017, 1982074647, 'English', 'Self-Help Realationships & Lifestyle', 698, 5, 26, 31);
+insert into book_Table values('Calculus: Early Transcendentals', '8th', 'James Stewart', '', 'Cengage Learning', 2016, 1285741552, 'English', 'Mathematics', 1404, 10, 7, 17);
+insert into book_Table values('The History Book (Big Ideas Simply Explained)', '1st', 'DK', '','DK Dorling Kindersley', 2016, 1465445102, 'English', 'History', 354, 1, 5, 6);
