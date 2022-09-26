@@ -53,7 +53,7 @@ namespace LibraryEmployeeApplication
                 if (name != "")
                 {
                     this.Hide();
-                    menu menu = new menu(name, employeeNum);
+                    menu menu = new menu();
                     menu.ShowDialog();
                     con.Close();
                     this.Close();

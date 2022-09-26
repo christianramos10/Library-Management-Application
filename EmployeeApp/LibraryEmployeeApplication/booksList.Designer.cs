@@ -63,6 +63,7 @@
             this.editBtn = new System.Windows.Forms.Button();
             this.addBtn = new System.Windows.Forms.Button();
             this.clearBtn = new System.Windows.Forms.Button();
+            this.backLink = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -374,11 +375,25 @@
             this.clearBtn.UseVisualStyleBackColor = true;
             this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
             // 
+            // backLink
+            // 
+            this.backLink.AutoSize = true;
+            this.backLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backLink.LinkColor = System.Drawing.Color.Navy;
+            this.backLink.Location = new System.Drawing.Point(13, 21);
+            this.backLink.Name = "backLink";
+            this.backLink.Size = new System.Drawing.Size(38, 16);
+            this.backLink.TabIndex = 36;
+            this.backLink.TabStop = true;
+            this.backLink.Text = "Back";
+            this.backLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.backLink_LinkClicked);
+            // 
             // booksList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1064, 639);
+            this.Controls.Add(this.backLink);
             this.Controls.Add(this.clearBtn);
             this.Controls.Add(this.addBtn);
             this.Controls.Add(this.editBtn);
@@ -458,5 +473,6 @@
         private System.Windows.Forms.Button editBtn;
         private System.Windows.Forms.Button addBtn;
         private System.Windows.Forms.Button clearBtn;
+        private System.Windows.Forms.LinkLabel backLink;
     }
 }

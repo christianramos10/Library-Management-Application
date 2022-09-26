@@ -12,12 +12,10 @@ namespace LibraryEmployeeApplication
 {
     public partial class menu : Form
     {
-        string name, employeeNum;
-        public menu(string name, string employeeNum)
+        public menu()
         {
             InitializeComponent();
-            this.name = name;   
-            this.employeeNum = employeeNum; 
+         
         }
 
         private void booksdbBtn_Click(object sender, EventArgs e)

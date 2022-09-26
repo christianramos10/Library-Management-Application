@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace LibraryEmployeeApplication
 {
@@ -101,6 +102,15 @@ namespace LibraryEmployeeApplication
             
             
             }
+        }
+
+        private void backLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            menu menu = new menu();
+            menu.ShowDialog();
+            con.Close();
+            this.Close();
         }
     }
 }
