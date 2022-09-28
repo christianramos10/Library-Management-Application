@@ -29,11 +29,14 @@ Design an application where employees can view and manange books and clients inf
 <br> 
 
 Sprint 1 - Design:
+<br>
 The system should iterate to multiple windows, starting from a log in window. The system's database should look like the following:
-
+<br>
 ![2022-09-26 (15)](https://user-images.githubusercontent.com/74178789/192401621-583ae12e-79e7-414e-bd3f-f1daabd74b96.png)
+<br>
+<br>
 
-***Sprint 1***
+**Sprint 1**
 <br>
 Week 1 Summary:
 <br>
@@ -42,15 +45,17 @@ Initialized SQL's tables for Books and Employees. Linked tables to project solut
 Log In Screen:
 <br>
 ![2022-09-26 (10)](https://user-images.githubusercontent.com/74178789/192756825-c42f0308-59de-4a0b-a095-52e14a1e9056.png)
-<br>
+<br><br>
+
 Employee Management Screen:
 <br>
 ![2022-09-26 (12)](https://user-images.githubusercontent.com/74178789/192757129-3b837e11-8463-4cc9-bca8-cff7fc46e3bf.png)
-<br>
+<br><br>
+
 Book Management Screen:
 <br>
 ![2022-09-26 (14)](https://user-images.githubusercontent.com/74178789/192757357-c190394f-01df-4e5f-8e85-c9a6fe3c4a2b.png)
-<br>
+<br><br>
 
 
 Week 1 Review: 
