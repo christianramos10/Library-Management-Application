@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Library</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container-fluid">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">My Library</a>
+
+      <!-- Search -->
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search Books" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+      <!-- Toggler Button -->
+      <div class="left-navbar-content">
+        <button type="button" class="btn btn-primary cart-btn"><i class="bi bi-cart4"></i> Cart</button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- Toggler Button Content -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Orders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Account Settings</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Trending Carousel -->
+  <div class="container carousel">
+    <div class="row">
+      <!-- Title -->
+      <div class="col-6">
+        <h3 class"mb-3">Trending Books</h3>
+      </div>
+
+      <!-- Carousel Buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-trending" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-trending" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- Carousel Content -->
+      <div class="carousel slide" id="carousel-trending" data-bs-ride="false">
+        <div class="carousel-inner">
+
+          <!-- Displayed Cards -->
+          <div class="carousel-item active">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Non displayed Cards -->
+          <div class="carousel-item">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Educational Carousel -->
+  <div class="container carousel">
+    <div class="row">
+      <!-- Title -->
+      <div class="col-6">
+        <h3 class"mb-3">Educational Books</h3>
+      </div>
+
+      <!-- Carousel Buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-educational" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-educational" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- Carousel Content -->
+      <div class="carousel slide" id="carousel-educational" data-bs-ride="false">
+        <div class="carousel-inner">
+
+          <!-- Displayed Cards -->
+          <div class="carousel-item active">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Non displayed Cards -->
+          <div class="carousel-item">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Horror Carousel -->
+  <div class="container carousel">
+    <div class="row">
+      <!-- Title -->
+      <div class="col-6">
+        <h3 class"mb-3">Horror Books</h3>
+      </div>
+
+      <!-- Carousel Buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-horror" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-horror" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- Carousel Content -->
+      <div class="carousel slide" id="carousel-horror" data-bs-ride="false">
+        <div class="carousel-inner">
+
+          <!-- Displayed Cards -->
+          <div class="carousel-item active">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Non displayed Cards -->
+          <div class="carousel-item">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Drama Carousel -->
+  <div class="container carousel">
+    <div class="row">
+      <!-- Title -->
+      <div class="col-6">
+        <h3 class"mb-3">Drama Books</h3>
+      </div>
+
+      <!-- Carousel Buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-drama" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-drama" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- Carousel Content -->
+      <div class="carousel slide" id="carousel-drama" data-bs-ride="false">
+        <div class="carousel-inner">
+
+          <!-- Displayed Cards -->
+          <div class="carousel-item active">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Non displayed Cards -->
+          <div class="carousel-item">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Comedy Carousel -->
+  <div class="container carousel">
+    <div class="row">
+      <!-- Title -->
+      <div class="col-6">
+        <h3 class"mb-3">Comedy Books</h3>
+      </div>
+
+      <!-- Carousel Buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-comedy" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-comedy" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- Carousel Content -->
+      <div class="carousel slide" id="carousel-comedy" data-bs-ride="false">
+        <div class="carousel-inner">
+
+          <!-- Displayed Cards -->
+          <div class="carousel-item active">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Non displayed Cards -->
+          <div class="carousel-item">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fantasy Carousel -->
+  <div class="container carousel">
+    <div class="row">
+      <!-- Title -->
+      <div class="col-6">
+        <h3 class"mb-3">Fantasy Books</h3>
+      </div>
+
+      <!-- Carousel Buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-fantasy" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-fantasy" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- Carousel Content -->
+      <div class="carousel slide" id="carousel-fantasy" data-bs-ride="false">
+        <div class="carousel-inner">
+
+          <!-- Displayed Cards -->
+          <div class="carousel-item active">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Non displayed Cards -->
+          <div class="carousel-item">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mistery Carousel -->
+  <div class="container carousel">
+    <div class="row">
+      <!-- Title -->
+      <div class="col-6">
+        <h3 class"mb-3">Mistery Books</h3>
+      </div>
+
+      <!-- Carousel Buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-mistery" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-mistery" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- Carousel Content -->
+      <div class="carousel slide" id="carousel-mistery" data-bs-ride="false">
+        <div class="carousel-inner">
+
+          <!-- Displayed Cards -->
+          <div class="carousel-item active">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Non displayed Cards -->
+          <div class="carousel-item">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Science-Fiction Carousel -->
+  <div class="container carousel">
+    <div class="row">
+      <!-- Title -->
+      <div class="col-6">
+        <h3 class"mb-3">Science-Fiction Books</h3>
+      </div>
+
+      <!-- Carousel Buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-science-fiction" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-science-fiction" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- Carousel Content -->
+      <div class="carousel slide" id="carousel-science-fiction" data-bs-ride="false">
+        <div class="carousel-inner">
+
+          <!-- Displayed Cards -->
+          <div class="carousel-item active">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Non displayed Cards -->
+          <div class="carousel-item">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Romance Carousel -->
+  <div class="container carousel">
+    <div class="row">
+      <!-- Title -->
+      <div class="col-6">
+        <h3 class"mb-3">Romance Books</h3>
+      </div>
+
+      <!-- Carousel Buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-romance" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-romance" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- Carousel Content -->
+      <div class="carousel slide" id="carousel-romance" data-bs-ride="false">
+        <div class="carousel-inner">
+
+          <!-- Displayed Cards -->
+          <div class="carousel-item active">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Non displayed Cards -->
+          <div class="carousel-item">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- History Carousel -->
+  <div class="container carousel">
+    <div class="row">
+      <!-- Title -->
+      <div class="col-6">
+        <h3 class"mb-3">History Books</h3>
+      </div>
+
+      <!-- Carousel Buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-history" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-history" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- Carousel Content -->
+      <div class="carousel slide" id="carousel-history" data-bs-ride="false">
+        <div class="carousel-inner">
+
+          <!-- Displayed Cards -->
+          <div class="carousel-item active">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Non displayed Cards -->
+          <div class="carousel-item">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Articles Carousel -->
+  <div class="container carousel">
+    <div class="row">
+      <!-- Title -->
+      <div class="col-6">
+        <h3 class"mb-3">Articles Books</h3>
+      </div>
+
+      <!-- Carousel Buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-articles" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-articles" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- Carousel Content -->
+      <div class="carousel slide" id="carousel-articles" data-bs-ride="false">
+        <div class="carousel-inner">
+
+          <!-- Displayed Cards -->
+          <div class="carousel-item active">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Non displayed Cards -->
+          <div class="carousel-item">
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                  <div class="card-body">
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" class="btn btn-primary order-btn">Order</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
