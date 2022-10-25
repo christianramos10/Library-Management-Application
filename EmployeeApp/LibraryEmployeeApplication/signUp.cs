@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,7 +23,7 @@ namespace LibraryEmployeeApplication
         }
 
         //Connect to the database
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-ETTN470;Initial Catalog=Librarydb;User ID=admin;Password=12345");
+        MySqlConnection con = new MySqlConnection("SERVER=localhost;DATABASE=mylibrary;UID=libraryAdmin;PASSWORD=#Admin123");
         private void signUp_Load(object sender, EventArgs e)
         {
             try
@@ -42,8 +43,8 @@ namespace LibraryEmployeeApplication
             this.dataGridView.DataSource = null;
             this.dataGridView.Rows.Clear();
 
-            string loadQry = "select * from employee_Table order by employeeNum";
-            SqlDataAdapter adapter = new SqlDataAdapter(loadQry, con);
+            string loadQry = "select * from employee order by employeeNum";
+            MySqlDataAdapter adapter = new MySqlDataAdapter(loadQry, con);
             DataTable dt = new DataTable();
             adapter.Fill(dt);
             this.dataGridView.DataSource = dt;
@@ -64,9 +65,9 @@ namespace LibraryEmployeeApplication
                     if (adminCheckBox.Checked == true) {
                         title = "administrator";
                     }
-                    string addQry = "insert into employee_Table values('" + employeeNumTextBox.Text + "','" + passwordTextBox.Text + "','" + firstNameTextBox.Text + "','" + lastNameTextBox.Text +
+                    string addQry = "insert into employee(password, firstName, lastName, age, sex, email, phone, address, role)  values('" + passwordTextBox.Text + "','" + firstNameTextBox.Text + "','" + lastNameTextBox.Text +
                         "','" + ageTextBox.Text + "','" + sexTextBox.Text + "','" + emailTextBox.Text + "','" + phoneTextBox.Text + "','" + addressTextBox.Text + "','" + title + "' );";
-                    SqlCommand cmd = new SqlCommand(addQry, con);
+                    MySqlCommand cmd = new MySqlCommand(addQry, con);
                     cmd.ExecuteNonQuery();
 
                     this.loadGrid();
@@ -86,9 +87,9 @@ namespace LibraryEmployeeApplication
             }
             else {
                 string empNameToDel = "";
-                string searchQry = "select * from employee_Table where employeeNum='" + employeeNumTextBox.Text + "'";
-                SqlCommand cmd = new SqlCommand(searchQry, con);
-                SqlDataReader dr = cmd.ExecuteReader();
+                string searchQry = "select * from employee where employeeNum='" + employeeNumTextBox.Text + "'";
+                MySqlCommand cmd = new MySqlCommand(searchQry, con);
+                MySqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read()) {
                     empNameToDel = dr["firstName"].ToString();
                 }
@@ -98,8 +99,8 @@ namespace LibraryEmployeeApplication
                     DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete this user: " + empNameToDel, "Delete Confirmation", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        string delQry = "delete from employee_Table where employeeNum='" + employeeNumTextBox.Text + "'";
-                        cmd = new SqlCommand(delQry, con);
+                        string delQry = "delete from employee where employeeNum='" + employeeNumTextBox.Text + "'";
+                        cmd = new MySqlCommand(delQry, con);
                         cmd.ExecuteNonQuery();
                         loadGrid();
 
@@ -129,10 +130,10 @@ namespace LibraryEmployeeApplication
                         title = "administrator";
                     }
 
-                    string updateQry = "update employee_Table set passw='" + passwordTextBox.Text + "',firstName='" + firstNameTextBox.Text + "',lastName='" + lastNameTextBox.Text +
-                        "',age='" + ageTextBox.Text + "',sex='" + sexTextBox.Text + "',email='" + emailTextBox.Text + "',phone='" + phoneTextBox.Text + "',adress='" + addressTextBox.Text + "',title='" + title + "" +
+                    string updateQry = "update employee set password='" + passwordTextBox.Text + "',firstName='" + firstNameTextBox.Text + "',lastName='" + lastNameTextBox.Text +
+                        "',age='" + ageTextBox.Text + "',sex='" + sexTextBox.Text + "',email='" + emailTextBox.Text + "',phone='" + phoneTextBox.Text + "',address='" + addressTextBox.Text + "',title='" + title + "" +
                         "where employeeNum='" + employeeNumTextBox.Text + "'";
-                    SqlCommand cmd = new SqlCommand(updateQry, con);
+                    MySqlCommand cmd = new MySqlCommand(updateQry, con);
                     cmd.ExecuteNonQuery();
                     this.loadGrid();
                     MessageBox.Show("User Updated");
@@ -171,10 +172,10 @@ namespace LibraryEmployeeApplication
 
             if (employeeNumTextBox.Text != "")
             {
-                string searchQry = "select * from employee_Table where employeeNum='" + employeeNumTextBox.Text + "'";
+                string searchQry = "select * from employee where employeeNum='" + employeeNumTextBox.Text + "'";
                 this.dataGridView.DataSource = null;
                 this.dataGridView.Rows.Clear();
-                SqlDataAdapter adapter = new SqlDataAdapter(searchQry, con);
+                MySqlDataAdapter adapter = new MySqlDataAdapter(searchQry, con);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
                 this.dataGridView.DataSource = dt;

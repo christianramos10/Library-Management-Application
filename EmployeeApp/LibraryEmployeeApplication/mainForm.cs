@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
+using MySql.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using MySql.Data;
 
 namespace LibraryEmployeeApplication
 {
@@ -19,7 +21,7 @@ namespace LibraryEmployeeApplication
         }
 
         //Connect to the database
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-ETTN470;Initial Catalog=Librarydb;User ID=admin;Password=12345");
+        MySqlConnection con = new MySqlConnection("SERVER=localhost;DATABASE=mylibrary;UID=libraryAdmin;PASSWORD=#Admin123");
         private void mainForm_Load(object sender, EventArgs e)
         {
             try {
@@ -33,19 +35,20 @@ namespace LibraryEmployeeApplication
 
         private void logInBtn_Click(object sender, EventArgs e)
         {
-            string name = "", employeeNum = "";
+            string name = "", employeeNum = "", employeeRole = "";
 
             if (employeeNumTextBox.Text.Length == 0 || passwordTextBox.Text.Length == 0) {
                 MessageBox.Show("Both fields are required.");
             }
 
             else{
-                string qry = "select * from employee_Table where employeeNum='" + employeeNumTextBox.Text + "' and passw='" + passwordTextBox.Text + "'";
-                SqlCommand cmd = new SqlCommand(qry, con);
-                SqlDataReader dr = cmd.ExecuteReader();
+                string qry = "select * from employee where employeeNum='" + employeeNumTextBox.Text + "' and password='" + passwordTextBox.Text + "'";
+                MySqlCommand cmd = new MySqlCommand(qry, con);
+                MySqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read()) { 
                     name = dr["firstName"].ToString();
                     employeeNum = dr["employeeNum"].ToString();
+                    employeeRole = dr["role"].ToString();
                 }
                 dr.Close();
 
@@ -53,7 +56,7 @@ namespace LibraryEmployeeApplication
                 if (name != "")
                 {
                     this.Hide();
-                    menu menu = new menu();
+                    menu menu = new menu(employeeNum, name, employeeRole);
                     menu.ShowDialog();
                     con.Close();
                     this.Close();

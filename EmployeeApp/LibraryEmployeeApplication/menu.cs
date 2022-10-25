@@ -12,34 +12,71 @@ namespace LibraryEmployeeApplication
 {
     public partial class menu : Form
     {
-        public menu()
+        string empNum = "", empName = "", empRole = "";
+
+        //Menu from main
+        public menu(string empNum, string empName, string empRole)
         {
             InitializeComponent();
-         
+            this.empNum = empNum;
+            this.empName = empName;
+            this.empRole = empRole;
+        }
+
+        //Menu from others
+        public menu(string empNum, string empName)
+        {
+            InitializeComponent();
+            this.empNum = empNum;
+            this.empName = empName;
+        }
+
+        private void menu_Load(object sender, EventArgs e)
+        {
+            welcomeLabel.Text += " " + this.empName;
         }
 
         private void booksdbBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            booksList booksList = new booksList();
+            booksList booksList = new booksList(this.empNum, this.empName);
             booksList.ShowDialog();
             this.Close();
         }
 
         private void clientRegistryBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            clientList clientList = new clientList();
-            clientList.ShowDialog();
-            this.Close();
+            if (this.empRole == "administrator")
+            {
+                this.Hide();
+                clientList clientList = new clientList(this.empNum, this.empName);
+                clientList.ShowDialog();
+                this.Close();
+            }
+            else {
+                MessageBox.Show("You are not authorized for this section.");
+            }
         }
 
         private void rentedBooksBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            rentedBooksList rentedBooksList = new rentedBooksList();
+            rentedBooksList rentedBooksList = new rentedBooksList(this.empNum, this.empName);
             rentedBooksList.ShowDialog();
             this.Close();
+        }
+
+        private void bookOrdersBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            BookOrders orderList = new BookOrders(this.empNum, this.empName);
+            orderList.ShowDialog();
+            this.Close();
+        }
+
+        private void employeeDbBtn_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -48,11 +85,6 @@ namespace LibraryEmployeeApplication
             mainForm mainForm = new mainForm(); 
             mainForm.ShowDialog();
             this.Close();
-        }
-
-        private void menu_Load(object sender, EventArgs e)
-        {
-
-        }
+        } 
     }
 }
