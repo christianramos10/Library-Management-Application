@@ -67,14 +67,5 @@ namespace LibraryEmployeeApplication
                 }
             }
         }
-
-        private void signUpLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            this.Hide();
-            validateAdmin validateAdmin = new validateAdmin();
-            validateAdmin.ShowDialog();
-            con.Close();
-            this.Close();
-        }
     }
 }

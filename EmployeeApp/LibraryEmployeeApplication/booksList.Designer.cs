@@ -451,6 +451,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView);
             this.Name = "booksList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "My Library";
             this.Load += new System.EventHandler(this.booksList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();

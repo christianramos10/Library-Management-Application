@@ -102,6 +102,12 @@
     <Compile Include="clientList.Designer.cs">
       <DependentUpon>clientList.cs</DependentUpon>
     </Compile>
+    <Compile Include="employeeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeeList.Designer.cs">
+      <DependentUpon>employeeList.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,18 +128,6 @@
     <Compile Include="rentedBooksList.Designer.cs">
       <DependentUpon>rentedBooksList.cs</DependentUpon>
     </Compile>
-    <Compile Include="signUp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="signUp.Designer.cs">
-      <DependentUpon>signUp.cs</DependentUpon>
-    </Compile>
-    <Compile Include="validateAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="validateAdmin.Designer.cs">
-      <DependentUpon>validateAdmin.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="BookOrders.resx">
       <DependentUpon>BookOrders.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="clientList.resx">
       <DependentUpon>clientList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeeList.resx">
+      <DependentUpon>employeeList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
@@ -160,12 +157,6 @@
     </Compile>
     <EmbeddedResource Include="rentedBooksList.resx">
       <DependentUpon>rentedBooksList.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="signUp.resx">
-      <DependentUpon>signUp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="validateAdmin.resx">
-      <DependentUpon>validateAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

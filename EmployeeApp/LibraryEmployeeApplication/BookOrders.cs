@@ -94,6 +94,8 @@ namespace LibraryEmployeeApplication
                         command.ExecuteNonQuery();
                         MessageBox.Show("Order was completed!");
                         this.loadOrders();
+                        this.dataGridView2.DataSource = null;
+                        this.dataGridView2.Rows.Clear();
                     }
 
                     catch (Exception ex) {

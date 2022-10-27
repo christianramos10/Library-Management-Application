@@ -76,7 +76,17 @@ namespace LibraryEmployeeApplication
 
         private void employeeDbBtn_Click(object sender, EventArgs e)
         {
-
+            if (this.empRole == "administrator")
+            {
+                this.Hide();
+                employeeList empList = new employeeList(this.empNum, this.empName);
+                empList.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("You are not authorized for this section.");
+            }
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

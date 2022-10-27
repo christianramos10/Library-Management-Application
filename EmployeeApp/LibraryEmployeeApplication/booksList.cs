@@ -16,7 +16,7 @@ namespace LibraryEmployeeApplication
 {
     public partial class booksList : Form
     {
-        string empNum = "", empName = "", empPass = "";
+        string empNum = "", empName = "";
 
         public booksList(string empNum, string empName)
         {
@@ -55,8 +55,8 @@ namespace LibraryEmployeeApplication
         {
             foreach (TextBox tb in this.Controls.OfType<TextBox>()) {
                 tb.Text = "";
-                descriptionTextBox.Text = "";
             }
+            descriptionTextBox.Text = "";
         }
 
         private void cellClicked(object sender, DataGridViewCellEventArgs e)

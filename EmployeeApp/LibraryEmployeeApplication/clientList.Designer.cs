@@ -256,6 +256,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.backBtn);
             this.Name = "clientList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "My Library";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);

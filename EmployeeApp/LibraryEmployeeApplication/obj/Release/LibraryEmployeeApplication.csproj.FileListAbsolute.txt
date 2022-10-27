@@ -39,3 +39,4 @@ D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Rel
 D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Release\LibraryEmployeeApplication.BookOrders.resources
 D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Release\LibraryEmployeeApplication.clientList.resources
 D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Release\LibraryEmployeeApplication.rentedBooksList.resources
+D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Release\LibraryEmployeeApplication.employeeList.resources

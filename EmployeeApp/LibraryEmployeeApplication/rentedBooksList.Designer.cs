@@ -133,6 +133,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView);
             this.Name = "rentedBooksList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "My Library";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
