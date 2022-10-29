@@ -14,14 +14,15 @@ namespace LibraryEmployeeApplication
     public partial class rentedBooksList : Form
     {
         MySqlConnection con = new MySqlConnection("SERVER=localhost;DATABASE=mylibrary;UID=libraryAdmin;PASSWORD=#Admin123");
-        string orderID = "", empNum = "", empName = "";
+        string orderID = "", empNum = "", empName = "", empRole="";
         string[] books;
 
-        public rentedBooksList(string empNum, string empName)
+        public rentedBooksList(string empNum, string empName, string empRole)
         {
             InitializeComponent();
             this.empNum = empNum;
             this.empName = empName;
+            this.empRole = empRole;
             con.Open();
             this.loadOrders();
         }
@@ -42,7 +43,7 @@ namespace LibraryEmployeeApplication
         private void backBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            menu menu = new menu(this.empNum, this.empName);
+            menu menu = new menu(this.empNum, this.empName, this.empRole);
             menu.ShowDialog();
             con.Close();
             this.Close();

@@ -16,12 +16,13 @@ namespace LibraryEmployeeApplication
 {
     public partial class booksList : Form
     {
-        string empNum = "", empName = "";
+        string empNum = "", empName = "", empRole="";
 
-        public booksList(string empNum, string empName)
+        public booksList(string empNum, string empName, string empRole)
         {
             this.empNum = empNum;
             this.empName = empName;
+            this.empRole = empRole;
             InitializeComponent();
         }
 
@@ -235,7 +236,7 @@ namespace LibraryEmployeeApplication
         private void backBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            menu menu = new menu(this.empNum, this.empName);
+            menu menu = new menu(this.empNum, this.empName, this.empRole);
             menu.ShowDialog();
             con.Close();
             this.Close();

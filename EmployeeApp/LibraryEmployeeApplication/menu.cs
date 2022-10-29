@@ -24,13 +24,6 @@ namespace LibraryEmployeeApplication
         }
 
         //Menu from others
-        public menu(string empNum, string empName)
-        {
-            InitializeComponent();
-            this.empNum = empNum;
-            this.empName = empName;
-        }
-
         private void menu_Load(object sender, EventArgs e)
         {
             welcomeLabel.Text += " " + this.empName;
@@ -39,7 +32,7 @@ namespace LibraryEmployeeApplication
         private void booksdbBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            booksList booksList = new booksList(this.empNum, this.empName);
+            booksList booksList = new booksList(this.empNum, this.empName, this.empRole);
             booksList.ShowDialog();
             this.Close();
         }
@@ -49,7 +42,7 @@ namespace LibraryEmployeeApplication
             if (this.empRole == "administrator")
             {
                 this.Hide();
-                clientList clientList = new clientList(this.empNum, this.empName);
+                clientList clientList = new clientList(this.empNum, this.empName, this.empRole);
                 clientList.ShowDialog();
                 this.Close();
             }
@@ -61,7 +54,7 @@ namespace LibraryEmployeeApplication
         private void rentedBooksBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            rentedBooksList rentedBooksList = new rentedBooksList(this.empNum, this.empName);
+            rentedBooksList rentedBooksList = new rentedBooksList(this.empNum, this.empName, this.empRole);
             rentedBooksList.ShowDialog();
             this.Close();
         }
@@ -69,7 +62,7 @@ namespace LibraryEmployeeApplication
         private void bookOrdersBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            BookOrders orderList = new BookOrders(this.empNum, this.empName);
+            BookOrders orderList = new BookOrders(this.empNum, this.empName, this.empRole);
             orderList.ShowDialog();
             this.Close();
         }
@@ -79,7 +72,7 @@ namespace LibraryEmployeeApplication
             if (this.empRole == "administrator")
             {
                 this.Hide();
-                employeeList empList = new employeeList(this.empNum, this.empName);
+                employeeList empList = new employeeList(this.empNum, this.empName, this.empRole);
                 empList.ShowDialog();
                 this.Close();
             }

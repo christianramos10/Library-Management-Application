@@ -111,13 +111,13 @@
             // 
             this.passwordTextBox.Location = new System.Drawing.Point(598, 245);
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(188, 20);
+            this.passwordTextBox.Size = new System.Drawing.Size(176, 20);
             this.passwordTextBox.TabIndex = 7;
             // 
             // logInBtn
             // 
             this.logInBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logInBtn.Location = new System.Drawing.Point(598, 307);
+            this.logInBtn.Location = new System.Drawing.Point(614, 307);
             this.logInBtn.Name = "logInBtn";
             this.logInBtn.Size = new System.Drawing.Size(88, 29);
             this.logInBtn.TabIndex = 10;
