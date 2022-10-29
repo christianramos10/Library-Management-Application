@@ -3,62 +3,29 @@ This repository includes a full-stack library management system.
 
 **Case:**
 A local library wants to implement a website for it's clients to browse and rent books and a in-unit system for employees to manage them. 
-
+<br>
 
 **Requirements:**
-Design and Implement front-end website for clients, back-end application for employees, and a database to contain all information. Library must meet the requirements for
+Design and Implement a website for clients, an application for employees, and a database to contain all information. Library must meet the requirements for
   maintaining the system, which includes but it is not limited to: (electric service, internet service, computer). 
-  
-
-**Plan:**
-Use SCRUM agile method to design and implement the system by phases. Consisting of (subject to changes):
-  <br>
-  Week 1-3 (Sprint 1): Design & Implementation of Employee's Application. Sprint review when requirements are met.
-  <br>
-  Week 4-6 (Sprint 2): Design & Implementation of Library's Website. Sprint review when requirements are met.
-  <br>
-  Week 7-8 (Testing): Testing the system.
-  <br>
-  Week 9: Release & Monitor
   <br>
 
-
-***Sprint 1 - Requirements:***
+**Website: mylibraryy.online**
+At the initial phase of the website's walktrough the client will encounter a log in page in which they can choose between logging in with an existing account or signing up a new one.
 <br>
-Design an application where employees can view and manange books and clients information. Modify books availability and quantity. Create new entries for new books as well as new clients (user's registring in library). Library manager's will have a title of administrator, hence will be able to modify employee's informations. 
-<br> 
-
-Sprint 1 - Design:
+![2022-10-29 (2)](https://user-images.githubusercontent.com/74178789/198829480-b199a468-5382-4bd4-948f-90e855e53441.png)
 <br>
-The system should iterate to multiple windows, starting from a log in window. The system's database should look like the following:
+After logging in, the php file 'connection' will verify the connection to the database and redirect the client to the home page. 
 <br>
-![2022-09-26 (15)](https://user-images.githubusercontent.com/74178789/192401621-583ae12e-79e7-414e-bd3f-f1daabd74b96.png)
+![2022-10-29 (4)](https://user-images.githubusercontent.com/74178789/198829562-3020e603-222b-4909-abea-d705ffadd96c.png)
 <br>
+Once the clients are in the home page, they can browse books and add them to a cart.
 <br>
-
-**Sprint 1**
+![2022-10-29 (5)](https://user-images.githubusercontent.com/74178789/198829699-c9448812-e11a-44e9-a3c5-b4da658e05bf.png)
+![2022-10-29 (6)](https://user-images.githubusercontent.com/74178789/198829704-3407cffb-c9a9-40eb-9f00-29c65bafe44d.png)
 <br>
-Week 1 Summary:
+Then, the clients can either confirm the books or continue browsing. If they decide to confirm the books in cart, an order will be created in the database with a 'pending' status (on which employees must physically get the books and prepare it). While the order status is 'pending' the clients can cancel the order at anytime via 'My Orders' tab.
 <br>
-Initialized SQL's tables for Books and Employees. Linked tables to project solution. Designed a prototype, in terms of visual aspects, that includes: log in, employee management, book management. The application also verifies that the user is a "supervisor" in order to have access to the employee management screen.
+![2022-10-29 (8)](https://user-images.githubusercontent.com/74178789/198829928-e46c6878-92d9-4864-a982-34ad600204a0.png)
 <br>
-Log In Screen:
-<br>
-![2022-09-26 (10)](https://user-images.githubusercontent.com/74178789/192756825-c42f0308-59de-4a0b-a095-52e14a1e9056.png)
-<br><br>
-
-Employee Management Screen:
-<br>
-![2022-09-26 (12)](https://user-images.githubusercontent.com/74178789/192757129-3b837e11-8463-4cc9-bca8-cff7fc46e3bf.png)
-<br><br>
-
-Book Management Screen:
-<br>
-![2022-09-26 (14)](https://user-images.githubusercontent.com/74178789/192757357-c190394f-01df-4e5f-8e85-c9a6fe3c4a2b.png)
-<br><br>
-
-
-Week 1 Review: 
-
-
- 
+While the order is being prepared, the user must revisit 'My Orders' tab to know when the books have been dispatched (order status).
