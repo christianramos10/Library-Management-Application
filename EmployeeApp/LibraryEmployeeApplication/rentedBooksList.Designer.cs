@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rentedBooksList));
             this.label4 = new System.Windows.Forms.Label();
             this.backBtn = new System.Windows.Forms.Button();
             this.handedInBtn = new System.Windows.Forms.Button();
@@ -132,6 +133,7 @@
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "rentedBooksList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "My Library";

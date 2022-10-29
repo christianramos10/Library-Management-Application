@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menu));
             this.rentedBooksBtn = new System.Windows.Forms.Button();
             this.clientRegistryBtn = new System.Windows.Forms.Button();
             this.booksdbBtn = new System.Windows.Forms.Button();
@@ -126,6 +127,7 @@
             this.Controls.Add(this.booksdbBtn);
             this.Controls.Add(this.clientRegistryBtn);
             this.Controls.Add(this.rentedBooksBtn);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "My Library";

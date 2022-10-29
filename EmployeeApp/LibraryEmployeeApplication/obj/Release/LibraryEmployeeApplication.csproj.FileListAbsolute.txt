@@ -29,8 +29,6 @@ D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Rel
 D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Release\LibraryEmployeeApplication.mainForm.resources
 D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Release\LibraryEmployeeApplication.menu.resources
 D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Release\LibraryEmployeeApplication.Properties.Resources.resources
-D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Release\LibraryEmployeeApplication.signUp.resources
-D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Release\LibraryEmployeeApplication.validateAdmin.resources
 D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Release\LibraryEmployeeApplication.csproj.GenerateResource.cache
 D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Release\LibraryEmployeeApplication.csproj.CoreCompileInputs.cache
 D:\GitHub\Library-Management-Site\EmployeeApp\LibraryEmployeeApplication\obj\Release\LibraryEmployeeApplication.csproj.CopyComplete
