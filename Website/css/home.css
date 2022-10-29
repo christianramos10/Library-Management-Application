@@ -1,0 +1,43 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+  /* Books Div */
+  /* .book-container .row .card{
+    padding-left: 50px;
+  } */
+
+.navbar h4{
+  color: #fff;
+}
+
+.navbar .badge, .navbar-brand{
+  color: rgba(141, 194, 111, 1);
+}
+
+.navbar .active a{
+  font-weight: bold;
+  color: rgba(141, 194, 111, 1);
+}
+
+.btnAdd:hover{
+  background-color: rgba(141, 194, 111, 1);
+}
+
+.btnSearch:hover{
+  background-color: rgba(141, 194, 111, 1);
+}
+
+.container{
+  text-align: center;
+}
+
+.card img{
+  width: auto;
+  height: auto;
+}
+
+.card{
+  width: 500px;
+  height: auto;
+}
